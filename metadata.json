@@ -1,0 +1,6 @@
+{
+  "name": "EMI Calculator",
+  "description": "A modern, professional, and fully responsive EMI Calculator to compute monthly loan installments, total interest, and amortized repayment schedules.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
