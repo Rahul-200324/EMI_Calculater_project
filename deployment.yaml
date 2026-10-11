@@ -1,0 +1,24 @@
+Kind: Deployment
+apiVersion: apps/v1
+metadata:
+  Name: emi-calculator-deployment
+
+spec:
+  replicas: 2
+
+  selector:
+    matchlabels:
+      app: emi-calculator-deployment
+
+  template:
+    metadata:
+      labels:
+        app: emi-calculator-deployment
+
+      spec:
+        containers:
+          - name: emi-container
+            image: emi-image:latest
+            ports:
+              - containerPort: 8080
+              
