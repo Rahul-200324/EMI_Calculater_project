@@ -25,16 +25,16 @@ pipeline{
             steps{
                 echo"Here we are deploying the application using docker"
                 sh '''
-                  docker run -d --name emi-calculater-container -p 5050:80 emi-calculate-image
+                  docker run -d --name emi-calculater-container -p 5050:80 emi-calculate-image'
                   '''
                 }
         }
-        stage("Deloyed"){
+        stage("Deployed Application"){
             steps{
                 echo "Here we are checking the deployed application"
                 sh '''
                   curl http://localhost:5050
-                  '''
+                '''
             }
         }
     }
